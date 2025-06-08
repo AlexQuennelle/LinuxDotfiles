@@ -1,0 +1,89 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](blue)\
+$os\
+$username\
+[](bg:#2c3b55 fg:blue)\
+$directory\
+[](bg:#a17ed8 fg:#2c3b55)\
+$git_branch\
+$git_status\
+[](bg:cyan fg:#a17ed8)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$haskell\
+$python\
+[ ](fg:cyan)\
+"""
+
+[git_branch]
+symbol = " "
+style = "bg:#a17ed8"
+format = "[ $symbol$branch ]($style)"
+[git_status]
+style = "bg:#a17ed8"
+format = '[[$al_status$ahead_behind](bg:#a17ed8 fg:black)]($style)'
+
+[os]
+disabled = false
+style = "bg:blue fg:#2560aa"
+[os.symbols]
+Windows = " "
+Arch = "󰣇 "
+
+[username]
+style_user = "bg:blue fg:white bold"
+style_root = "bg:blue fg:red bold"
+disabled = false
+show_always = true
+format = '[$user ]($style)'
+
+[directory]
+style = "bg:#2c3b55 fg:white"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[c]
+disabled = false
+detect_files = ['Src/main.c', 'main.c']
+detect_folders = ['Src', 'Include']
+symbol = " "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
+[cpp]
+disabled = false
+detect_files = ['Src/main.cpp', 'main.cpp']
+detect_folders = ['Src', 'Include']
+symbol = " "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
+[rust]
+disabled = false
+symbol = " "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
+[golang]
+disabled = false
+symbol = " "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
+[nodejs]
+disabled = false
+symbol = "󰎙 "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
+[haskell]
+disabled = false
+symbol = " "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
+[python]
+disabled = false
+symbol = " "
+style = "bg:cyan fg:black"
+format = '[ $symbol$name ]($style)'
