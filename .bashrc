@@ -17,3 +17,7 @@ alias c++='clang++'
 
 # init starship
 eval "$(starship init bash)"
+
+[ -f "/home/Alex/.ghcup/env" ] && . "/home/Alex/.ghcup/env" # ghcup-env
+export EDITOR=nvim
+export QT_QPA_PLATFORMTHEME="qt5ct"
