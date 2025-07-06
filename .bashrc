@@ -21,3 +21,15 @@ eval "$(starship init bash)"
 [ -f "/home/Alex/.ghcup/env" ] && . "/home/Alex/.ghcup/env" # ghcup-env
 export EDITOR=nvim
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# set SSH_AUTH_SOCK env var to a fixed value
+export SSH_AUTH_SOCK=~/.ssh/ssh-agent.sock
+
+# test whether $SSH_AUTH_SOCK is valid
+ssh-add -l 2>/dev/null >/dev/null
+
+# if not valid, then start ssh-agent using $SSH_AUTH_SOCK
+if [ $? -ge 2 ]; then
+	ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
+	ssh-add
+fi
