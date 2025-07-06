@@ -6,27 +6,26 @@ $os\
 $username\
 [](bg:#2c3b55 fg:blue)\
 $directory\
-[](bg:#a17ed8 fg:#2c3b55)\
+[](bg:blue fg:#2c3b55)\
 $git_branch\
 $git_status\
-[](bg:cyan fg:#a17ed8)\
+[](bg:purple fg:blue)\
 $c\
-$cpp\
 $rust\
 $golang\
 $nodejs\
 $haskell\
 $python\
-[ ](fg:cyan)\
+[ ](fg:purple)\
 """
 
 [git_branch]
 symbol = " "
-style = "bg:#a17ed8"
+style = "bg:blue"
 format = "[ $symbol$branch ]($style)"
 [git_status]
-style = "bg:#a17ed8"
-format = '[[$al_status$ahead_behind](bg:#a17ed8 fg:black)]($style)'
+style = "bg:blue"
+format = '[[$al_status$ahead_behind](bg:blue fg:black)]($style)'
 
 [os]
 disabled = false
@@ -53,37 +52,37 @@ disabled = false
 detect_files = ['Src/main.c', 'main.c']
 detect_folders = ['Src', 'Include']
 symbol = " "
-style = "bg:cyan fg:black"
+style = "bg:purple fg:black"
 format = '[ $symbol$name ]($style)'
-[cpp]
-disabled = false
-detect_files = ['Src/main.cpp', 'main.cpp']
-detect_folders = ['Src', 'Include']
-symbol = " "
-style = "bg:cyan fg:black"
-format = '[ $symbol$name ]($style)'
+# [cpp]
+# disabled = false
+# detect_files = ['Src/main.cpp', 'main.cpp']
+# detect_folders = ['Src', 'Include']
+# symbol = " "
+# style = "bg:purple fg:black"
+# format = '[ $symbol$name ]($style)'
 [rust]
 disabled = false
 symbol = " "
-style = "bg:cyan fg:black"
+style = "bg:purple fg:black"
 format = '[ $symbol$name ]($style)'
 [golang]
 disabled = false
 symbol = " "
-style = "bg:cyan fg:black"
+style = "bg:purple fg:black"
 format = '[ $symbol$name ]($style)'
 [nodejs]
 disabled = false
 symbol = "󰎙 "
-style = "bg:cyan fg:black"
+style = "bg:purple fg:black"
 format = '[ $symbol$name ]($style)'
 [haskell]
 disabled = false
 symbol = " "
-style = "bg:cyan fg:black"
+style = "bg:purple fg:black"
 format = '[ $symbol$name ]($style)'
 [python]
 disabled = false
 symbol = " "
-style = "bg:cyan fg:black"
+style = "bg:purple fg:black"
 format = '[ $symbol$name ]($style)'
