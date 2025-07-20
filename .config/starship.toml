@@ -8,12 +8,12 @@ $username\
 $directory\
 [](bg:blue fg:#2c3b55)\
 $git_branch\
+$git_commit\
 $git_status\
 [](bg:purple fg:blue)\
 $c\
 $rust\
 $golang\
-$nodejs\
 $haskell\
 $python\
 [ ](fg:purple)\
@@ -21,28 +21,35 @@ $python\
 
 [git_branch]
 symbol = " "
-style = "bg:blue"
+style = "bg:prev_bg"
 format = "[ $symbol$branch ]($style)"
+ignore_branches = [ "main" ]
+[git_commit]
+tag_disabled = false
+only_detached = false
+style = "bg:prev_bg"
+format = "[ $tag ]($style)"
+tag_symbol = ""
 [git_status]
-style = "bg:blue"
+style = "bg:prev_bg"
 format = '[[$al_status$ahead_behind](bg:blue fg:black)]($style)'
 
 [os]
 disabled = false
-style = "bg:blue fg:#2560aa"
+style = "bg:prev_fg fg:#2560aa"
 [os.symbols]
 Windows = " "
 Arch = "󰣇 "
 
 [username]
-style_user = "bg:blue fg:white bold"
-style_root = "bg:blue fg:red bold"
+style_user = "bg:prev_bg fg:black dimmed bold"
+style_root = "bg:prev_bg fg:red bold"
 disabled = false
 show_always = true
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#2c3b55 fg:white"
+style = "bg:prev_bg fg:white"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -52,8 +59,8 @@ disabled = false
 detect_files = ['Src/main.c', 'main.c']
 detect_folders = ['Src', 'Include']
 symbol = " "
-style = "bg:purple fg:black"
-format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:black"
+format = '[ $symbol ]($style)'
 # [cpp]
 # disabled = false
 # detect_files = ['Src/main.cpp', 'main.cpp']
@@ -64,25 +71,25 @@ format = '[ $symbol$name ]($style)'
 [rust]
 disabled = false
 symbol = " "
-style = "bg:purple fg:black"
-format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:black"
+format = '[ $symbol ]($style)'
 [golang]
 disabled = false
 symbol = " "
-style = "bg:purple fg:black"
-format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:black"
+format = '[ $symbol ]($style)'
 [nodejs]
 disabled = false
 symbol = "󰎙 "
-style = "bg:purple fg:black"
-format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:black"
+format = '[ $symbol ]($style)'
 [haskell]
 disabled = false
 symbol = " "
-style = "bg:purple fg:black"
-format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:black"
+format = '[ $symbol ]($style)'
 [python]
 disabled = false
 symbol = " "
-style = "bg:purple fg:black"
-format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:black"
+format = '[ $symbol ]($style)'
