@@ -1,95 +1,96 @@
 "$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
 
 format = """
-[](blue)\
 $os\
 $username\
-[](bg:#2c3b55 fg:blue)\
 $directory\
-[](bg:blue fg:#2c3b55)\
 $git_branch\
 $git_commit\
 $git_status\
-[](bg:purple fg:blue)\
 $c\
+$cpp\
 $rust\
 $golang\
 $haskell\
 $python\
-[ ](fg:purple)\
+$nodejs\
+\n \
+$character\
 """
 
 [git_branch]
 symbol = " "
-style = "bg:prev_bg"
-format = "[ $symbol$branch ]($style)"
-ignore_branches = [ "main" ]
+style = "bg:black fg:purple"
+format = "[](fg:black)[ $symbol$branch ]($style)"
+# ignore_branches = [ "main" ]
 [git_commit]
 tag_disabled = false
 only_detached = false
 style = "bg:prev_bg"
-format = "[ $tag ]($style)"
+format = "[$hash $tag]($style)"
 tag_symbol = ""
 [git_status]
 style = "bg:prev_bg"
-format = '[[$al_status$ahead_behind](bg:blue fg:black)]($style)'
+format = '[[$al_status$ahead_behind](bg:blue fg:black) ]($style)[ ](fg:prev_bg)'
 
 [os]
 disabled = false
-style = "bg:prev_fg fg:#2560aa"
+style = "bg:black fg:green"
+format = "[ ](fg:black)[$symbol ]($style)"
 [os.symbols]
 Windows = " "
 Arch = "󰣇 "
 
 [username]
-style_user = "bg:prev_bg fg:black dimmed bold"
+style_user = "bg:prev_bg fg:green"
 style_root = "bg:prev_bg fg:red bold"
 disabled = false
 show_always = true
-format = '[$user ]($style)'
+format = '[$user ]($style)[ ](fg:prev_bg)'
 
 [directory]
-style = "bg:prev_bg fg:white"
-format = "[ $path ]($style)"
+style = "bg:black fg:white"
+format = "[](fg:black)[ $path ]($style)[ ](fg:prev_bg)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [c]
 disabled = false
 detect_files = ['Src/main.c', 'main.c']
-detect_folders = ['Src', 'Include']
 symbol = " "
-style = "bg:prev_bg fg:black"
-format = '[ $symbol ]($style)'
-# [cpp]
-# disabled = false
-# detect_files = ['Src/main.cpp', 'main.cpp']
-# detect_folders = ['Src', 'Include']
-# symbol = " "
-# style = "bg:purple fg:black"
-# format = '[ $symbol$name ]($style)'
+style = "bg:prev_bg fg:blue"
+format = '[$symbol ]($style)'
+[cpp]
+disabled = false
+detect_files = ['src/main.cpp', 'main.cpp']
+detect_folders = ['src', 'Include']
+symbol = " "
+style = "bg:prev_bg fg:blue"
+format = '[$symbol ]($style)'
 [rust]
 disabled = false
 symbol = " "
-style = "bg:prev_bg fg:black"
-format = '[ $symbol ]($style)'
+style = "bg:prev_bg fg:yellow"
+format = '[$symbol ]($style)'
 [golang]
 disabled = false
 symbol = " "
-style = "bg:prev_bg fg:black"
-format = '[ $symbol ]($style)'
+style = "bg:prev_bg fg:green"
+format = '[$symbol ]($style)'
 [nodejs]
 disabled = false
 symbol = "󰎙 "
-style = "bg:prev_bg fg:black"
-format = '[ $symbol ]($style)'
+style = "bg:prev_bg fg:yellow"
+format = '[$symbol ]($style)'
+detect_files = ['index.html']
 [haskell]
 disabled = false
 symbol = " "
-style = "bg:prev_bg fg:black"
-format = '[ $symbol ]($style)'
+style = "bg:prev_bg fg:purple"
+format = '[$symbol ]($style)'
 [python]
 disabled = false
 symbol = " "
-style = "bg:prev_bg fg:black"
-format = '[ $symbol ]($style)'
+style = "bg:prev_bg fg:yellow"
+format = '[$symbol ]($style)'
