@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias su='su -m'
 PS1='[\u@\h \W]\$ '
 
 # Dotfiles config setups
@@ -14,6 +15,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias cc='clang'
 alias c++='clang++'
+
+# alias ghci='clear && ghci'
 
 # init starship
 eval "$(starship init bash)"
@@ -28,8 +31,10 @@ export SSH_AUTH_SOCK=~/.ssh/ssh-agent.sock
 # test whether $SSH_AUTH_SOCK is valid
 ssh-add -l 2>/dev/null >/dev/null
 
+
 # if not valid, then start ssh-agent using $SSH_AUTH_SOCK
 if [ $? -ge 2 ]; then
 	ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
 	ssh-add
 fi
+fastfetch
