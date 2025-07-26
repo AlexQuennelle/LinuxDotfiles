@@ -32,7 +32,7 @@ format = "[$hash $tag]($style)"
 tag_symbol = ""
 [git_status]
 style = "bg:prev_bg"
-format = '[[$al_status$ahead_behind](bg:blue fg:black) ]($style)[ ](fg:prev_bg)'
+format = '[[$al_status$ahead_behind](bg:black fg:blue) ]($style)[ ](fg:prev_bg)'
 
 [os]
 disabled = false
