@@ -11,8 +11,7 @@ window#waybar {
   /*opacity: 0.85;*/
   /*border-image: linear-gradient(to right, #ebbcba, #ebbcba) 4;*/
 }
-#workspaces,
-#pulseaudio,
+#wireplumber,
 #cpu,
 #memory {
   font-size: 16px;
@@ -32,8 +31,42 @@ window#waybar {
   margin-right: 8px;
 }
 
+#cpu.low {
+  color: #9ccfd8;
+}
+#cpu.med {
+  color: #f6c177;
+}
+#cpu.high {
+  color: #eb6f92;
+}
+
+#wireplumber.low {
+  color: #eb6f92;
+}
+#wireplumber.med {
+  color: #f6c177;
+}
+#wireplumber.high {
+  color: #9ccfd8;
+}
+#wireplumber.off,
+#wireplumber.muted {
+  color: #6e6a86;
+}
+
+#workspaces {
+  font-size: 16px;
+  font-family: "JetBrainsMono Nerd Font";
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
 #workspaces button {
-  color: #ffffff;
+  color: #e0def4;
+  padding-right: 6px;
+  border-radius: 8px;
 }
 #workspaces button:hover {
   background: #403d52;
