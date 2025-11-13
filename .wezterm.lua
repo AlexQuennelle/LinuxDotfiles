@@ -12,6 +12,7 @@ config.window_background_opacity = 0.85
 config.text_background_opacity = 1.0
 config.enable_kitty_graphics = true
 config.kde_window_background_blur = true
+config.initial_cols = 86
 config.window_padding = {
   left = '0cell',
   right = '0cell',
