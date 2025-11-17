@@ -1,1 +1,8 @@
-.cfg
+.cfg/
+.local/
+.nuget/
+Downloads/
+discord/
+UnrealEngine/
+google-chrome/
+
