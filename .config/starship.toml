@@ -18,6 +18,7 @@ $nodejs\
 \n \
 $character\
 """
+command_timeout = 2000
 
 [git_branch]
 symbol = " "

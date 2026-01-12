@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias logout='loginctl kill-session "$XDG_SESSION_ID"'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias su='su -m'
@@ -37,4 +38,4 @@ if [ $? -ge 2 ]; then
 	ssh-agent -a "$SSH_AUTH_SOCK" >/dev/null
 	ssh-add
 fi
-fastfetch
+clear && fastfetch
