@@ -28,6 +28,9 @@ extra-cmake-modules
 fastfetch
 firefox
 fuse3
+gamescope
+gamescope-session-git
+gamescope-session-steam-git
 gdb
 gimp
 git
@@ -48,12 +51,15 @@ jetbrains-toolbox
 kdialog
 kvantum
 kvantum-qt5
+libretro-dolphin
+libretro-melonds
 linux
 linux-firmware
 linux-lts
 lldb
 llvm
 lutris
+mangohud
 mesa-utils
 mkinitcpio-colors-git
 mono
@@ -91,6 +97,9 @@ qt5ct
 qt6ct-kde
 qt6ct-kde-debug
 raylib
+retroarch
+retroarch-assets-ozone
+retroarch-assets-xmb
 rofi
 rose-pine-cursor
 ryujinx
@@ -110,6 +119,7 @@ swaync
 toml11
 tree-sitter-cli
 ttf-jetbrains-mono-nerd
+typst
 unityhub
 unixodbc
 unrar-free
@@ -124,6 +134,7 @@ vulkan-radeon
 waybar
 wezterm-git
 wezterm-git-debug
+wget
 wine
 winetricks
 woff2-font-awesome
