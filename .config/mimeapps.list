@@ -1,6 +1,6 @@
 [Added Associations]
 application/json=nvim.desktop;
-application/pdf=google-chrome-stable.desktop;
+application/pdf=vivaldi-stable.desktop;gimp.desktop;google-chrome-stable.desktop;google-chrome.desktop;com.google.Chrome.desktop;chromium.desktop;firefox.desktop;
 application/uproject=jetbrains-rider-47e0c432-a5f4-4f57-98b4-f6ff1a6c9401.desktop;Unreal 5.6.1.desktop;
 application/x-docbook+xml=nvim.desktop;
 application/x-wii-rom=dolphin-emu.desktop;com.libretro.RetroArch.desktop;
@@ -15,7 +15,7 @@ video/x-matroska=vlc.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
-application/pdf=google-chrome-stable.desktop;
+application/pdf=vivaldi-stable.desktop;
 application/uproject=jetbrains-rider-47e0c432-a5f4-4f57-98b4-f6ff1a6c9401.desktop;
 application/x-docbook+xml=nvim.desktop;
 application/x-wii-rom=dolphin-emu.desktop;
@@ -36,6 +36,7 @@ x-scheme-handler/discord-475456035851599874=discord-475456035851599874.desktop
 x-scheme-handler/http=vivaldi-stable.desktop
 x-scheme-handler/https=vivaldi-stable.desktop
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/mailto=vivaldi-stable.desktop
 x-scheme-handler/unknown=vivaldi-stable.desktop
 
 [Removed Associations]
