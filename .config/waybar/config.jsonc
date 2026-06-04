@@ -10,10 +10,10 @@
 	"spacing": 4, // Gaps between modules (4px)
 	// Choose the order of the modules
 	"modules-left": [
-		"hyprland/workspaces"
+		"ext/workspaces"
 	],
 	"modules-center": [
-		"hyprland/window"
+		"dwl/window"
 	],
 	"modules-right": [
 		"wireplumber#sink",
@@ -23,22 +23,27 @@
 		"clock"
 	],
 	// Modules configuration
-	"hyprland/workspaces": {
+	"ext/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
 		"warp-on-scroll": false,
 		"format": "{icon}",
 		//"format": "{name}: {icon}",
+		"active-only": false,
 		"format-icons": {
-			// "1": "",
+			"1": "<span color='#6e6a86'></span>",
 			// "2": "",
 			// "3": "",
 			// "4": "",
-			// "5": "",
+			"9": "<span color='#6e6a86'></span>",
 			"urgent": "<span color='#f6c177'></span>",
 			"active": "",
 			"default": "<span color='#6e6a86'></span>"
-		}
+		},
+		"ignore-hidden": true,
+		"on-click": "activate",
+		"on-click-right": "deactivate",
+		"sort-by-id": true
 	},
 	"wireplumber#sink": {
 		"states": {
@@ -49,7 +54,11 @@
 		},
 		"format": "{volume}% {icon} ",
 		"format-muted": "{volume}%  ",
-		"format-icons": ["", "", ""],
+		"format-icons": [
+			"",
+			"",
+			""
+		],
 		"on-click": "helvum",
 		"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
 		"scroll-step": 5,
