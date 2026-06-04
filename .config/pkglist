@@ -11,8 +11,9 @@ bat
 betterdiscord-installer
 betterdiscord-installer-debug
 blender
+brightnessctl
 btop
-chromium
+cjson
 clang
 cmake
 code
@@ -67,6 +68,8 @@ lldb
 llvm
 lutris
 mangohud
+mangowm
+mangowm-debug
 mesa-utils
 mono
 mono-msbuild
@@ -102,6 +105,7 @@ qt5-wayland
 qt5ct
 qt6ct-kde
 qt6ct-kde-debug
+quickshell
 raylib
 retroarch
 retroarch-assets-ozone
@@ -111,6 +115,7 @@ rose-pine-cursor
 ryujinx-canary
 samba
 sane
+scenefx0.4
 sddm
 sdl2_image
 shadps4
@@ -121,6 +126,7 @@ socat
 spotify-launcher
 starship
 steam
+swaybg
 swaync
 toml11
 tree-sitter-cli
@@ -143,6 +149,7 @@ wezterm-git-debug
 wget
 wine
 winetricks
+wlr-randr
 woff2-font-awesome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
