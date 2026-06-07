@@ -144,6 +144,7 @@ vlc-plugins-all
 vulkan-headers
 vulkan-radeon
 waybar
+wev
 wezterm-git
 wezterm-git-debug
 wget
