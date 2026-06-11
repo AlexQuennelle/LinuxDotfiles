@@ -35,7 +35,7 @@ x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
 x-scheme-handler/discord-475456035851599874=discord-475456035851599874.desktop
 x-scheme-handler/http=vivaldi-stable.desktop
 x-scheme-handler/https=vivaldi-stable.desktop
-x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/jetbrains=jetbrainsd.desktop
 x-scheme-handler/mailto=vivaldi-stable.desktop
 x-scheme-handler/unknown=vivaldi-stable.desktop
 
