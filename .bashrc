@@ -9,6 +9,7 @@ alias logout='loginctl kill-session "$XDG_SESSION_ID"'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias su='su -m'
+alias fzvim='nvim $(ls -a | fzf)'
 PS1='[\u@\h \W]\$ '
 
 # Dotfiles config setups

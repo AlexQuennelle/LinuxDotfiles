@@ -17,12 +17,12 @@ cjson
 clang
 cmake
 code
+cogfly-bin
 cubeb
 cubeb-debug
 cubeb-docs
 cups
 cups-pdf
-darktable
 discord
 distrobox
 dolphin
@@ -34,6 +34,7 @@ enet
 eslint
 extra-cmake-modules
 fastfetch
+ffmpegthumbs
 firefox
 fuse-overlayfs
 fuse3
@@ -41,6 +42,7 @@ fzf
 gdb
 gimp
 git
+git-delta
 gitui
 go
 google-chrome
@@ -111,7 +113,6 @@ raylib
 retroarch
 retroarch-assets-ozone
 retroarch-assets-xmb
-rofi
 rose-pine-cursor
 ryujinx-canary
 samba

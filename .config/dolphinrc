@@ -22,7 +22,7 @@ Places Icons Static Size=22
 MenuBar=Disabled
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail,ffmpegthumbs
 
 [kuick-move]
 Paths[$e]=/e/
