@@ -1,0 +1,3 @@
+[submodule "/home/Alex/.config/zshPlugins/fzf-tab"]
+	path = /home/Alex/.config/zshPlugins/fzf-tab
+	url = git@github.com:Aloxaf/fzf-tab.git
