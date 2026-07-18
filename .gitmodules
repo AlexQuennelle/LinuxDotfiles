@@ -1,6 +1,6 @@
-[submodule "/home/Alex/.config/zshPlugins/fzf-tab"]
-	path = /home/Alex/.config/zshPlugins/fzf-tab
+[submodule ".config/zshPlugins/fzf-tab"]
+	path = .config/zshPlugins/fzf-tab
 	url = git@github.com:Aloxaf/fzf-tab.git
-[submodule "/home/Alex/.config/nvim"]
-	path = /home/Alex/.config/nvim
+[submodule ".config/nvim"]
+	path = .config/nvim
 	url = git@github.com:AlexQuennelle/nvim.git
