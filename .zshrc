@@ -7,6 +7,7 @@ alias fzvim='nvim $(ls -a | fzf)'
 PS1='[\u@\h \W]\$ '
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias configui='gitui -d $HOME/.cfg/ -w $HOME'
 
 zstyle ':completion:*' completer _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
