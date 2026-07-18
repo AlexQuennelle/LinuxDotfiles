@@ -93,12 +93,14 @@ npm
 nss-mdns
 nsz
 ntfs-3g
+ntfsprogs
 nwg-look
 obs-studio
 odin
 openrgb
 openssh
 os-prober
+partitionmanager
 piper
 pipewire-alsa
 pipewire-jack
@@ -128,6 +130,7 @@ sane
 scenefx0.4
 sddm
 sdl2_image
+seahorse
 shadps4
 shadps4-debug
 shadps4-qtlauncher-git

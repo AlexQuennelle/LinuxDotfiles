@@ -1,3 +1,4 @@
 binds {
+    Mod+Alt+Escape hotkey-overlay-title="Power Menu: Toggle" repeat=false { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Mod+R hotkey-overlay-title="Default Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
 }
